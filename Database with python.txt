@@ -11,3 +11,14 @@ https://www.tutorialspoint.com/python/python_database_access.htm
 http://www.mysqltutorial.org/python-connecting-mysql-databases/
 
 http://www.mysqltutorial.org/python-mysql/
+
+CONFIGURING MYSQL DATABASE ON PI:
+https://support.rackspace.com/how-to/mysql-resetting-a-lost-mysql-root-password/
+
+http://raspberrywebserver.com/sql-databases/using-mysql-on-a-raspberry-pi.html
+
+https://stackoverflow.com/questions/454854/no-module-named-mysqldb
+
+https://stackoverflow.com/questions/11657829/error-2002-hy000-cant-connect-to-local-mysql-server-through-socket-var-run
+
+https://stackoverflow.com/questions/13404119/python-mysqldb-connecting-error

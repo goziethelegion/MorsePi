@@ -1,0 +1,9 @@
+Two PIs (receiver (andrew) and sender (gozie)).
+
+First python script connects to the database via TCP.
+
+Second, the python script connects the pi's via tcp 
+
+Second, andrew sends Morse code and its translation to the other pi via a TCP connection.
+
+Third, andrew's messages are stored in the database.

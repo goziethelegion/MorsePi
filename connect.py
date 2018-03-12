@@ -2,14 +2,22 @@
 
 import MySQLdb
 
-#Open database connection
-db = MySQLdb.connect("ifedavid_partscrib","ifedavid","Rapperholikah1997","gator4235.hostgator.com" )
+def connect2db():
+    #Open database connection
+    conn = MySQLdb.connect(
+                         user="MorseAdmin",
+                         passwd="MorseAdmin",
+                         host="165.227.44.224",
+                         port=3306,
+                         db="Morse"
+                         )
 
-#prepare a cursor object using cursor() method
-cursor = db.cursor()
+def connectionclose(connection) :
+    connection.close()
 
-#Drop table if it already exist using execute() method.
-cursor.execute("DROP TABLE IF EXISTS EMPLOYEE")
 
-#disconnect from server
-db.close()
+def msgdb (connection, msg, user) :
+    cursor = connection.cursor()
+
+    cursor.execute("""INSERT INTO conversation (`message`, `user_one`) VALUES(" + msg +", " + user +") """)
+    connection.commit()
