@@ -1,0 +1,60 @@
+ void make_message(JSONObject jobj) {
+
+            String c_id = "";
+            String user_one = "";
+            String user_two = "";
+            String message = "";
+
+            try
+
+            {
+                String[] messagedisplay = new String[4];
+
+                    c_id =jobj.getString("c_id");
+                    user_one =jobj.getString("user_one").toString();
+                    user_two =jobj.getString("user_two").toString();
+                    message =jobj.getString("message").toString();
+                    //declared the adapter
+
+
+                    // So if users is 1
+                    if (user_one.equals("1")) {
+                        // Here is where we need the adapater to append "Gozie ->"
+                        messagedisplay[0] = "Gozie ->";
+                        //manipulating the adapter based on the conditions
+//                        listView.setAdapter(itemsAdapter);
+
+                    } else {
+                        // Here is where we need the adapter to append "Andrew ->"
+                        messagedisplay[0] = "Andrew ->";
+//                        listView.setAdapter(itemsAdapter);
+                    }
+
+                    if(user_two.equals("1"))
+                    {
+                        messagedisplay[1] = "Gozie\n";
+//                        listView.setAdapter(itemsAdapter);
+                        //Here is where we need the adapter to append "Gozie \n"
+                    }
+                    else{
+                        //Here is where we need the adapter to append "Andrew \n"
+                        messagedisplay[1] = "Andrew\n";
+//                        listView.setAdapter(itemsAdapter);
+                    }
+
+                    // Then we need to append the message and then \n to the adapter
+                    messagedisplay[2] = message;
+
+                    // translate the message to Morse and then append \n
+                    String morse;
+                    morse = TextToMorse.textToMorse(message);
+                    // adapter must append morse and \n
+                    messagedisplay[3] = morse;
+                ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, messagedisplay);
+                    listView.setAdapter(itemsAdapter);
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }

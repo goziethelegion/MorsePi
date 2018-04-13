@@ -22,3 +22,7 @@ https://stackoverflow.com/questions/454854/no-module-named-mysqldb
 https://stackoverflow.com/questions/11657829/error-2002-hy000-cant-connect-to-local-mysql-server-through-socket-var-run
 
 https://stackoverflow.com/questions/13404119/python-mysqldb-connecting-error
+
+https://stackoverflow.com/questions/32754461/how-to-install-mysql-connector-via-pip
+
+https://stackoverflow.com/questions/38007240/installing-mysql-connector-for-python-3-in-raspberry-pi

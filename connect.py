@@ -11,6 +11,7 @@ def connect2db():
                          port=3306,
                          db="Morse"
                          )
+    return conn
 
 def connectionclose(connection) :
     connection.close()
@@ -18,6 +19,9 @@ def connectionclose(connection) :
 
 def msgdb (connection, msg, user) :
     cursor = connection.cursor()
-
-    cursor.execute("""INSERT INTO conversation (`message`, `user_one`) VALUES(" + msg +", " + user +") """)
+    #print(msg)
+    query = "INSERT INTO conversation (`message`, `user_one`) VALUES ('" +msg+ "', "+ str(user)+")"
+    print(query)
+    cursor.execute(query)
     connection.commit()
+

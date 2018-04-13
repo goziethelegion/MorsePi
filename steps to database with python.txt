@@ -7,3 +7,9 @@ Second, the python script connects the pi's via tcp
 Second, andrew sends Morse code and its translation to the other pi via a TCP connection.
 
 Third, andrew's messages are stored in the database.
+
+Android:
+
+Establish connection with database (by loading the script).
+
+After script is loaded, display it properly.

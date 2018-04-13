@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Project.Code</string>
+    <string name="space">ESPACE</string>
+    <string name="clear">clair</string>
+    <string name="send">envoyer</string>
+    <string name="language">English</string>
+    <string name="sound">Du son</string>
+    <string name="tutorial">Didacticiel</string>
+    <string name="red">Rouge</string>
+    <string name="white">Blanc</string>
+    <string name="green">Vert</string>
+    <string name="blue">Bleu</string>
+    <string name="about">Sur</string>
+    <string name="backcolor">Couleur de fond</string>
+    <string name="soundtog">du Son</string>
+    <string name="hint">Entrex un Message</string>
+    <string name="tab_text_1">Lettres</string>
+    <string name="tab_text_2">Nombres</string>
+    <string name="tab_text_3">Quiz</string>
+    <string name="action_settings">Parametres</string>
+    <string name="letters">Lettres</string>
+    <string name="numbers">Nombres</string>
+    <string name="quiz">Quiz Temps!</string>
+    <string name="quizstring">Quiz</string>
+    <string name="right">Droite</string>
+    <string name="wrong">Faux</string>
+    <string name="translator">Traductrice</string>
+</resources>
